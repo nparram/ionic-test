@@ -26,8 +26,7 @@ jobs:
       working-directory: ./flaskr
       run: |
         python -m pip install --upgrade pip
-        python -m pip install -r requirements.txt    
-
+        python pip install flask==1.1.2
     - name: Correr pruebas
       id: correr-pruebas
       run: python -m unittest
